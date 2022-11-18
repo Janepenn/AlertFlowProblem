@@ -1,0 +1,17 @@
+@import '../../Assets/style/variables.scss';
+
+.switchButton{
+	display: flex;
+	align-items: center;
+	label{
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400px;
+		margin-left: 16px;
+		color:white;
+		cursor: pointer;
+
+		&:hover{
+			color:rgb(199, 199, 199);
+		}
+	}
+}

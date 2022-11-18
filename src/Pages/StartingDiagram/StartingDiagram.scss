@@ -1,0 +1,225 @@
+@import '../../Assets/style/variables.scss';
+
+.startingDiagramHeader{
+	padding-bottom: 20px;
+	height: 88px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 250px;
+	span{
+		color:white;
+		cursor: pointer;
+		font-family:'Roboto', sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		span{
+			color:var(--lighterBlue);
+
+			&:hover{
+				color:white;
+			}
+		}
+	}
+}
+
+.startingDiagramContent{
+	height: calc(100% - 88px);
+	border-radius: 20px;
+	background-color: white;
+}
+
+.propertiesPanel{
+	padding:88px 20px 20px 20px;
+}
+
+.djs-container.djs-palette-shown.djs-palette-two-column.djs-palette-open {
+    background-image: radial-gradient(#ccc 10%, transparent 11%), radial-gradient(#ccc 10%, transparent 11%);
+    background-size: 20px 20px;
+    background-position: 0 0, 40px 40px;
+    background-repeat: repeat;
+}
+
+.djs-palette.two-column.open {
+	margin-top: 70px;
+    background: #1C4182;
+    position: fixed;
+    z-index: 1000;
+    top: 67px;
+    width: 220px!important;
+    height: calc(100% - 120px);
+	width: 100%;
+	border: none;
+	left: 10px;
+	display: none;
+}
+
+.actionButtons {
+	display: flex;
+	#downloadLink {
+		margin-right: 10px;
+	}
+}
+
+.icon-custom-triangle {
+	background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%2352B415%22%20width%3D%22270%22%20height%3D%22240%22%3E%3Cpath%20d%3D%22M8%2C40%20l%2015%2C-27%20l%2015%2C27%20z%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.icon-custom-circle {
+	background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23ffc800%22%20viewBox%3D%220%200%20120%20120%22%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2240%22%2F%3E%3C%2Fsvg%3E');
+}
+
+// .emailNotifications:before{
+// 	content:url('../../Assets/img/icons/message.svg');
+	
+// }
+
+.emailNotifications, .emailPoll{
+	background: url('../../Assets/img/icons/Message\ \(Circle\).svg');
+	background-size: cover;
+}
+
+.conditionalRouter{
+	background: url('../../Assets/img/icons/Conditional\ Router\ \(Circle\).svg');
+	background-size: cover;
+}
+
+.noAction{
+	background: url('../../Assets/img/icons/Close\ \(Circle\).svg');
+	background-size: cover;	
+}
+
+#sidebarPropertiesPanel {
+	display: none;
+}
+
+.djs-palette {
+	display: none;
+}
+
+.alertFlowWrapper {
+	&.active {
+		#sidebarPropertiesPanel {
+			display: block;
+		}
+	}
+	&.inactive {
+		.djs-palette {
+			display: block;
+		}
+	}
+}
+
+.entry.emailPoll {
+    background-color: rgba(97, 122, 168, 0.3);
+    background-size: 43px;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px 45px 60px;
+    margin: 10px;
+    position: relative;
+}
+
+.entry.emailPoll:after {
+    content: "Email Poll";
+    position: absolute;
+    display: block;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    bottom: -10px;
+    width: 100%;
+    left: 0;
+    font-weight: bold;
+}
+
+.entry.emailNotifications {
+    background-color: rgba(97, 122, 168, 0.3);
+    background-size: 43px;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px 45px 60px;
+    margin: 10px 5px;
+    position: relative;
+}
+
+.entry.emailNotifications:after {
+    content: "Email Notification";
+    position: absolute;
+    display: block;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    bottom: -10px;
+    width: 100%;
+    left: 0;
+    font-weight: bold;
+}
+
+.entry.conditionalRouter {
+    background-color: rgba(97, 122, 168, 0.3);
+    background-size: 43px;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px 45px 60px;
+    margin: 10px;
+    position: relative;
+}
+
+.entry.conditionalRouter:after {
+    content: "Conditional Router";
+    position: absolute;
+    display: block;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    bottom: -10px;
+    width: 100%;
+    left: 0;
+    font-weight: bold;
+}
+
+.entry.noAction {
+    background-color: rgba(97, 122, 168, 0.3);
+    background-size: 43px;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px 45px 60px;
+    margin: 10px 5px;
+    position: relative;
+}
+
+.entry.noAction:after {
+    content: "No action";
+    position: absolute;
+    display: block;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    bottom: -10px;
+    width: 100%;
+    left: 0;
+    font-weight: bold;
+}
+
+button#downloadLink{
+    border: none;
+    background: #4472C4;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,15 @@
+@import '../../Assets/style/variables.scss';
+
+.alertFlowWrapper{
+	height: 100vh;
+	background-color: var(--lightBlue);
+	.alertFlowSidebar{
+		background-color: var(--lightBlue);
+		padding: 20px;
+	}
+	.layoutBodyWrapper{
+		background-color: var(--darkBlue);
+		padding: 20px;
+		border-bottom-left-radius: 20px;
+	}
+}

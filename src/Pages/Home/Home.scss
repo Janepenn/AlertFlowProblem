@@ -1,0 +1,24 @@
+@import '../../Assets/style/variables.scss';
+
+.homeHeader{
+	height: 88px;
+}
+
+.homeContent{
+	height: calc(100% - 88px);
+	border-radius: 20px;
+	background-color: white;
+
+	h1{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 24px;
+	}
+
+	button{
+		background-color: #19AF54;
+		border-radius: 5px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+	}
+}

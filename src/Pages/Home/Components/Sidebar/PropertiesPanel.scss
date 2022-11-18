@@ -1,0 +1,63 @@
+#sidebarPropertiesPanel{
+	width: 100%;
+	border:2px solid white;
+	border-radius: 15px;
+	padding:10px 0;
+	.bio-properties-panel-arrow{
+		cursor: pointer;
+	}
+	.bio-properties-panel-label{
+		font-size: 14px;
+		font-weight: 700;
+		margin-bottom: 4px;
+	}
+
+	.bio-properties-panel-group{
+		background-color: var(--lightBlue);	
+		
+		&:last-child{
+			border-bottom-left-radius: 15px;
+			border-bottom-right-radius: 15px;
+		}
+	}
+	.bio-properties-panel-dot{
+		background-color: var(--successGreen);
+	}
+
+	.bio-properties-panel-input{
+		border-radius: 5px;
+		margin-bottom: 20px;
+		background:#E8EBEF;
+		color:#929292;
+		height: 42px;
+		width: 100%;
+	}
+
+	.bio-properties-panel-header{
+		border-radius: 15px;
+		background-color: var(--lightBlue);
+		color:white;
+		border: none;
+		svg{
+			fill:white;
+			stroke:white;
+		}
+	}
+	.bio-properties-panel-group-header{
+		background-color: var(--lightBlue);
+		color:white;
+		svg{
+			fill:white;
+			stroke:white;
+		}
+	}
+	.bio-properties-panel-group-entries{
+		padding-top: 20px;
+		background-color: var(--lightBlue);
+		color:white;
+		svg{
+			fill:white;
+			stroke:white;
+		}
+	}
+}

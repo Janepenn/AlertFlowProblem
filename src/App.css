@@ -1,0 +1,101 @@
+.App {
+	text-align: center;
+  }
+  
+  .App-logo {
+	height: 40vmin;
+	pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+	  animation: App-logo-spin infinite 20s linear;
+	}
+  }
+  
+  .App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+  }
+  
+  .App-link {
+	color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+  
+  .entry.bpmn-icon-start-event-none {
+	  display: none;
+  }
+  
+  .entry.bpmn-icon-intermediate-event-none {
+	  display: none;
+  }
+  
+  .entry.bpmn-icon-end-event-none {
+	  display: none;
+  }
+  
+  .entry.bpmn-icon-gateway-none {
+	  display: none;
+  }
+  
+  .entry.bpmn-icon-task {
+	  display: none;
+  }
+  
+  .entry.bpmn-icon-subprocess-expanded {
+	  display: none;
+  }
+  
+  .entry.bpmn-icon-data-object {
+	  display: none;
+  }
+  
+  .entry.bpmn-icon-data-store {
+	  display: none;
+  }
+  
+  .entry.bpmn-icon-participant {
+	  display: none;
+  }
+  
+  .entry.bpmn-icon-group {
+	  display: none;
+  }
+  
+  .entry.bpmn-icon-hand-tool {
+	  display: none;
+  }
+  
+  .entry.bpmn-icon-lasso-tool {
+	  display: none;
+  }
+  
+  .entry.bpmn-icon-space-tool {
+	  display: none;
+  }
+  
+  .entry.bpmn-icon-connection-multi {
+	  display: none;
+  }
+  
+  hr.separator {
+	  display: none;
+  }
+
+
+  
